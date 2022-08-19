@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <h1></h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
 
@@ -156,7 +156,12 @@
 
           <label class="form-field">
             How do you rate our work?
-            <input type="range">
+            <input
+            type="range"
+            name="rate-range"
+            min="0"
+            >
+            
           </label>
         </fieldset>
       </form>
@@ -170,8 +175,6 @@
             <textarea
             name="feedback"
             id="feedback"
-            cols="30"
-            rows="10"
             ></textarea>
           </label>
 
@@ -184,8 +187,7 @@
           </label>
         </fieldset>
       </form>
-
-      <button type="submit">Submit</button>
+      <button type="submit" class="button">Submit</button>
 
     </form>
   </body>
